@@ -1,0 +1,48 @@
+:root {
+  --bg: #f7f7fb;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #2563eb;
+}
+
+* { box-sizing: border-box; }
+html,body,#root { height: 100%; margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+
+.app {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+header h1 {
+  margin: 0 0 16px 0;
+  color: var(--text);
+  font-size: 28px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 520px;
+}
+
+.todo-item {
+  background: var(--card);
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 2px rgba(15,23,42,0.04);
+}
+
+.todo-title {
+  color: var(--text);
+  font-size: 16px;
+}
